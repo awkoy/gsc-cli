@@ -1,0 +1,39 @@
+{
+  "name": "gsc-cli",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "CLI for Google Search Console",
+  "bin": {
+    "gsc": "./dist/bin.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup --config tsup.config.ts",
+    "test": "vitest run --config vitest.config.ts",
+    "test:watch": "vitest --config vitest.config.ts",
+    "test:integration": "vitest run --config vitest.config.ts --dir test/integration",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json --noEmit",
+    "lint": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json --noEmit",
+    "clean": "rm -rf dist coverage .tsbuildinfo .tsbuildinfo.test tsconfig.tsbuildinfo"
+  },
+  "dependencies": {
+    "@gsc-cli/sdk": "workspace:*",
+    "citty": "^0.1.6",
+    "fast-xml-parser": "^4.3.6",
+    "google-auth-library": "^9.0.0",
+    "p-limit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT"
+}
