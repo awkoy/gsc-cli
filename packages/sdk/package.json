@@ -39,6 +39,11 @@
     "node": ">=20.0.0"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awkoy/gsc-cli.git",
+    "directory": "packages/sdk"
+  },
   "publishConfig": {
     "access": "public",
     "provenance": true
