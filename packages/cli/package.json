@@ -1,6 +1,6 @@
 {
   "name": "@gsc-cli/cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "description": "CLI for Google Search Console",
   "bin": {
