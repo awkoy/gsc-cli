@@ -1,6 +1,6 @@
 {
-  "name": "gsc-cli",
-  "version": "0.0.1",
+  "name": "@gsc-cli/cli",
+  "version": "0.0.2",
   "type": "module",
   "description": "CLI for Google Search Console",
   "bin": {
@@ -11,7 +11,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsup --config tsup.config.ts",
+    "build": "tsup --config tsup.config.ts && chmod +x dist/bin.js",
     "test": "vitest run --config vitest.config.ts",
     "test:watch": "vitest --config vitest.config.ts",
     "test:integration": "vitest run --config vitest.config.ts --dir test/integration",
@@ -35,5 +35,9 @@
   "engines": {
     "node": ">=20.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
 }

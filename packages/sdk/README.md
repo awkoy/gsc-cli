@@ -1,6 +1,6 @@
 # @gsc-cli/sdk
 
-A typed TypeScript client for the Google Search Console API. Powers the [`gsc-cli`](https://www.npmjs.com/package/gsc-cli) command-line tool and embeddable in any Node.js project.
+A typed TypeScript client for the Google Search Console API. Powers the [`@gsc-cli/cli`](https://www.npmjs.com/package/@gsc-cli/cli) command-line tool and embeddable in any Node.js project.
 
 > Looking for the full project documentation, the CLI usage guide, or the auth flow rationale? See the [monorepo README](https://github.com/awkoy/gsc-cli#readme).
 
@@ -118,7 +118,7 @@ The SDK uses [`google-auth-library`](https://www.npmjs.com/package/google-auth-l
 For interactive setup on a developer machine, the easiest path is:
 
 ```bash
-npm install -g gsc-cli
+npm install -g @gsc-cli/cli
 gsc auth login
 ```
 

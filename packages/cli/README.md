@@ -1,4 +1,4 @@
-# gsc-cli
+# @gsc-cli/cli
 
 LLM-friendly command-line interface for the Google Search Console API. Designed for both humans and AI agents — every command emits a stable JSON envelope that scripts and coding agents can parse without scraping help text.
 
@@ -7,11 +7,11 @@ LLM-friendly command-line interface for the Google Search Console API. Designed 
 ## Install
 
 ```bash
-npm install -g gsc-cli
+npm install -g @gsc-cli/cli
 # or
-pnpm add -g gsc-cli
+pnpm add -g @gsc-cli/cli
 # or
-bun add -g gsc-cli
+bun add -g @gsc-cli/cli
 ```
 
 Requires Node.js ≥ 20.

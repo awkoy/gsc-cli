@@ -20,8 +20,6 @@ jobs:
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 10.27.0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -29,6 +27,9 @@ jobs:
           node-version: 20
           cache: pnpm
           registry-url: https://registry.npmjs.org
+
+      - name: Upgrade npm for Trusted Publisher (OIDC) support
+        run: npm install -g npm@latest
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
@@ -52,4 +53,3 @@ jobs:
           publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

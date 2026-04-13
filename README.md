@@ -19,11 +19,11 @@ A LLM-friendly TypeScript CLI and SDK for the Google Search Console API.
 ## Install
 
 ```bash
-npm install -g gsc-cli
+npm install -g @gsc-cli/cli
 # or
-pnpm add -g gsc-cli
+pnpm add -g @gsc-cli/cli
 # or
-bun add -g gsc-cli
+bun add -g @gsc-cli/cli
 ```
 
 Requires Node.js ≥ 20.
@@ -277,15 +277,15 @@ pnpm typecheck     # tsc --noEmit on src + test configs
 Per-package:
 
 ```bash
-pnpm --filter gsc-cli build
-pnpm --filter gsc-cli test
+pnpm --filter @gsc-cli/cli build
+pnpm --filter @gsc-cli/cli test
 pnpm --filter @gsc-cli/sdk test
 ```
 
 Run the local CLI against your own Search Console account without globally installing:
 
 ```bash
-pnpm --filter gsc-cli build
+pnpm --filter @gsc-cli/cli build
 node packages/cli/dist/bin.js sites list
 ```
 

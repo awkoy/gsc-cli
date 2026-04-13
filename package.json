@@ -4,7 +4,7 @@
   "private": true,
   "description": "LLM-friendly TypeScript CLI + SDK for Google Search Console",
   "license": "MIT",
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.33.0",
   "engines": {
     "node": ">=20.0.0"
   },
@@ -15,7 +15,9 @@
     "test:integration": "pnpm -r test:integration",
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",
-    "clean": "pnpm -r clean && rm -rf node_modules"
+    "clean": "pnpm -r clean && rm -rf node_modules",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.0"
