@@ -470,10 +470,12 @@ const doctor = defineCommand({
 
 // ── Main ───────────────────────────────────────────────────────────────────
 
+declare const __PACKAGE_VERSION__: string;
+
 const main = defineCommand({
   meta: {
     name: 'gsc',
-    version: '0.0.1',
+    version: __PACKAGE_VERSION__,
     description: 'LLM-friendly CLI for Google Search Console',
   },
   subCommands: {
